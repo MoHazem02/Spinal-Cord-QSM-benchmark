@@ -4,6 +4,10 @@ A reproducible Python framework for comparing published spinal-cord quantitative
 susceptibility mapping (QSM) derivatives across brain-recommended and
 spinal-cord-optimized processing configurations.
 
+<img width="2670" height="3045" alt="roi_metrics_chimap" src="https://github.com/user-attachments/assets/323236ef-7261-40e9-9092-e5651cb4697e" />
+<img width="3570" height="1485" alt="algorithm_agreement" src="https://github.com/user-attachments/assets/4cacd061-2fcf-4518-a2fd-55ef72e05c5a" />
+
+
 ## Motivation
 
 QSM estimates tissue magnetic susceptibility from field perturbations measured
