@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spinal-cord-qsm-benchmark"
+version = "0.1.0"
+description = "Reproducible analysis of published spinal-cord QSM derivatives"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "jinja2>=3.1",
+  "matplotlib>=3.8",
+  "nibabel>=5.2",
+  "numpy>=1.26",
+  "pandas>=2.1",
+  "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+download = ["openneuro-py>=2024.2"]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+scqsm-benchmark = "spinal_cord_qsm_benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
